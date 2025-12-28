@@ -1,7 +1,7 @@
-# Monaca AdMob iframe ブリッジ仕様まとめ（引き継ぎ用）
+# Monaca AdMob iframe ブリッジ仕様まとめ
 
 ## 1. 全体構成
-
+```
 本構成は、RPGツクールMV（iframe内：子）と Monaca / Cordova（親）間で
 postMessage を用いて AdMob（admob-plus）を制御するための
 最小・安全構成である。
@@ -9,6 +9,10 @@ postMessage を用いて AdMob（admob-plus）を制御するための
 ゲーム進行は常に 子側主導 とし、
 親側は 広告処理と結果応答のみ を担当する。
 
+www/rpg内に、出力したゲームデータを入れる。
+※出力前にwww/rpg内のプラグインをプラグインリスト最下部に移植し、設定すること。
+※使用前にMonacaのクラウドIDE側で、AdmobのAppId設定をすること。
+```
 ---
 
 ## 2. 通信方式
