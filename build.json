@@ -1,0 +1,15 @@
+{
+    "ios": {
+        "debug": {
+            "buildFlag": [
+                "-quiet",
+                "IPHONEOS_DEPLOYMENT_TARGET=12.0"
+            ]
+        },
+        "release": {
+            "buildFlag": [
+                "-quiet"
+            ]
+        }
+    }
+}
